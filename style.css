@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #A40E4C;
+    --secondary-color: #ACC3A6;
+    --font-color: #2C2C54;
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    display: flex;
+    align-items: center; /* Alinha itens ao centro */
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#container {
+    width: 90vw;
+    max-width: 1600px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    -webkit-box-shadow: 10px 10px 19px -6px rgba(54,54,53,1);
+    -moz-box-shadow: 10px 10px 19px -6px rgba(54,54,53,1);
+    box-shadow: 10px 10px 19px -6px rgba(54,54,53,1);
+    margin: 4% 0;
+    padding: 4%;
+}
+
+#title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#description {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4%;
+}
+
+#survey-form {
+    margin-top: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#survey-form label {
+    font-size: 1.5rem;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+#name, #email, #age, #number, #dropdown {
+    height: 4rem;
+    border: 0;
+}
+
+fieldset {
+    border: 0;
+    font-size: 1.5rem;
+    margin-top: 4%;
+}
+
+fieldset legend {
+    margin-bottom: 4%;
+}
+
+.fieldset-changes {
+    margin-bottom: 4%;
+}
+
+textarea {
+    margin-top: 4%;
+    resize: vertical;
+    border: 0;
+}
+
+button {
+    margin-top: 4%;
+    border: 0;
+    border-radius: .5rem;
+    height: 4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+    #survey-form {
+        margin-top: 4%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #survey-form label, fieldset, fieldset legend, .fieldset-changes, textarea, button {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 2rem;
+    }
+
+    #title {
+        font-size: 6rem;
+    }
+
+    #description {
+        font-size: 3rem;
+    }
+
+    button {
+        width: 30%;
+    }
+}
+
+
+
+
+

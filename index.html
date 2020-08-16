@@ -4,47 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-    <h1 id="title">
-        asdasddasfas
-    </h1>
+    <div id="container">
+        <h1 id="title">
+            Melhorias na Plataforma
+        </h1>
+    
+        <p id="description">
+            Obrigado por tirar um pouco de seu tempo para responder a este formulário!
+        </p>
+    
+        <form action="" id="survey-form">
+            <label for="name" id="name-label" >Nome</label>
+            <input type="text" name="name" id="name" required placeholder="Insira seu nome">
+    
+            <label for="email" id="email-label">E-mail</label>
+            <input type="email" name="email" id="email" required placeholder="Insira seu e-mail">
+    
+            <label for="number" id="number-label">Idade</label>
+            <input type="number" name="number" id="number" min="1" max="100" placeholder="Insira um número">
 
-    <p id="description">
-        asfsdfasdfsa
-    </p>
+            <fieldset class="fieldset-changes">
+                <legend>Sexo:</legend>
+                <input type="radio" name="radio" id="" value="Masculino"> Masculino
+                <input type="radio" name="radio" id="" value="Feminino"> Feminino
+                <input type="radio" name="radio" id="" value="Outro"> Outro
+            </fieldset>
+            
+            <label for="select" id="label-select">Há quanto tempo utiliza nossa plataforma?</label>
+            <select name="select" id="dropdown">
+                <option value="" disabled>Escolha uma opção</option>
+                <option value="0-1">Menos de 1 ano</option>
+                <option value="1-3">1 a 3 anos</option>
+                <option value="3-5">3 a 5 anos</option>
+                <option value="5">Mais de 5 anos</option>
+            </select>
 
-    <form action="" id="survey-form">
-        <label for="name" id="name-label">Nome</label>
-        <input type="text" name="name" id="name" required placeholder="Insira seu nome">
-
-        <label for="email" id="email-label">E-mail</label>
-        <input type="email" name="email" id="email" required placeholder="Insira seu e-mail">
-
-        <label for="number" id="number-label">Idade</label>
-        <input type="number" name="number" id="number" min="1" max="100" placeholder="Insira um número">
-
-        <select name="select" id="dropdown">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-
-        <input type="radio" name="radio" id="" value="Ola mundo">
-        <input type="radio" name="radio" id="" value="Ola mundo">
-        <input type="radio" name="radio" id="" value="Ola mundo">
-
-        <input type="checkbox" name="check" id="" value="Ola mundo">
-        <input type="checkbox" name="check" id="" value="Ola mundo">
-        <input type="checkbox" name="check" id="" value="Ola mundo">
-
-        <textarea name="textare" id="" cols="30" rows="10"></textarea>
-
-        <button id="submit">Submit</button>
-
-    </form>
+            <fieldset class="fieldset-changes">
+                <legend>Que melhorias gostaria em nossa plataforma?</legend>
+                <input type="checkbox" name="check" id="" value="cursos"> Mais cursos
+                <input type="checkbox" name="check" id="" value="Ola mundo"> Qualidade do Áudio
+                <input type="checkbox" name="check" id="" value="Ola mundo"> Qualidade do Vídeo
+            </fieldset>
+            
+            <label for="textarea">Escreva mais sugestões:</label>
+            <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+    
+            <button id="submit">Enviar Respostas</button>
+        </form>
+    </div>
     
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
